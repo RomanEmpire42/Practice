@@ -8,6 +8,13 @@ void setup() {
 void draw() {
   System.out.println(bob.myX);
   System.out.println(sue.myX);
+  
+  //PREDICTION
+  //  >> 25
+  //  >> 225
+  
+  // I was right!
+  
 }
 class Balloon {
   int myX, myY, mySize;
