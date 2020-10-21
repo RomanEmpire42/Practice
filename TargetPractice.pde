@@ -5,10 +5,10 @@ void setup() {
 }
 void draw() {
   background(197);
-  one = ________________________________;
-  two = ________________________________;
-  ________________________________
-  ________________________________
+  one = new Target(25, 50);
+  two = new Target(75, 50);
+  one.show();
+  two.show();
 }
 void mousePressed() {
   redraw();
@@ -16,9 +16,9 @@ void mousePressed() {
 class Target {
   int numRings, myX, myY;
   Target(int x, int y) {  //constructor initializes the 3 variables
-     ________________________________
-    ________________________________
-    ________________________________
+     myX = x;
+    myY = y;
+    numRings = (int)(Math.random()*3) + 1;
   }
  void show() {
    int siz = 50;
