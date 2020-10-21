@@ -15,6 +15,13 @@ void draw() {
     }
   }
   System.out.println(sum);
+  
+  // PREDICTION
+  //   >> you cant predict it? its random.
+  //   >> the most i'll say is it could be 0, 6-40 (but not 11)
+  
+  
+  // I failed. I read it as tokenvalue > 6 for some reason
 }
 void mousePressed() {
   redraw();
