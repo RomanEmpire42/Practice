@@ -8,7 +8,7 @@ void draw() {
   for(int i = 0; i < 100; i++)
   {
     Clover bob = new Clover();
-    //_________your code here________;
+    bob.show();
   }
 }
 void mousePressed() {
@@ -17,9 +17,9 @@ void mousePressed() {
 class Clover {
   int numLeaves, myX, myY;
   Clover() { //constructor
-    //_________your code here________;
-    //_________your code here________;
-    //_________your code here________;
+    numLeaves = (int)(Math.random()*2) + 3;
+    myX = (int)(Math.random()*400);
+    myY = (int)(Math.random()*400);
   }
   void show() {
      //I used some ugly math below
