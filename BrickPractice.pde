@@ -4,12 +4,22 @@ void setup() {
   noLoop();
 }
 void draw() {
-  for(_____________________________)
+  int row = 0;
+  for(int y = 0; y < 400; y += 12)
   {
-    for(____________________________)
+    row++;
+    for(int x = 0; x < 400; x += 52)
     {
+      if(row % 2 == 0)
+      {
+        x -= 26;
+      }
       Brick bob = new Brick(x,y);
-      _____________________________;
+      if(row % 2 == 0)
+      {
+        x += 26;
+      }
+      bob.show();
     }
   }
 }
@@ -17,8 +27,8 @@ class Brick {
   int myX, myY;
   Brick(int x, int y)
   {
-    _____________________________;
-    _____________________________;
+    myX = x;
+    myY = y;
   }
   void show()
   {
